@@ -1,8 +1,8 @@
 *.mp3
-transcribe_clean1
-transcribe_clean
-transcript
-transcript_output
+transcribe_clean1.py
+transcribe_clean.py
+transcript.txt
+transcript_output.txt
 .env
 # 🐍 Python
 __pycache__/
