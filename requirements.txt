@@ -2,3 +2,5 @@ streamlit
 ffmpeg
 openai-whisper
 torch
+git+https://github.com/openai/whisper.git
+

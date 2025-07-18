@@ -5,7 +5,7 @@ import re
 import os
 from tempfile import NamedTemporaryFile
 
-model = whisper.load_model("tiny")
+model = whisper.load_model("tiny") # Change to "base", "small", etc. as needed
 
 def format_time(seconds):
     return str(datetime.timedelta(seconds=int(seconds)))
@@ -13,7 +13,7 @@ def format_time(seconds):
 def split_sentences(text):
     return re.split(r'(?<=[.?!])\s+', text.strip())
 
-st.title("🎙️ Whisper Audio Transcriber")
+st.title("🎙️ Audio Transcriber")
 st.write("Upload an audio file and transcribe with speaker labeling and timestamps.")
 
 audio_file = st.file_uploader("Upload Audio", type=["mp3", "wav", "m4a"])
